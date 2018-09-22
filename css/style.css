@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background: url('../img/background_1.jpg') 0 0 no-repeat;
+    background-position: center;
+    height: 4147px;
+    width: 100%;
+}
+
+#ninja_boy {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0px;
+    margin: auto;
+    background: url('../img/ninja.png') 0 0 no-repeat;
+    width: 180px;
+    height: 180px;
+    background-size: 1260px 180px;
+    transition: top 1s ease;
+}
+
+.animate {
+    animation: move 1s steps(7) infinite;
+}
+
+@keyframes move {
+    from {
+        background-position-x: 0 0;
+    }
+    to {
+        background-position-x: -1260px 0;
+    }
+}
